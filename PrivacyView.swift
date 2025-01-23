@@ -114,7 +114,7 @@ struct WebView: UIViewRepresentable {
             return nil
         }
         
-        func webView(_ webView: WKWebView, shouldPreviewElement elementInfo: WKPreviewElementInfo) -> Bool {
+        private func webView(_ webView: WKWebView, shouldPreviewElement elementInfo: WKContextMenuElementInfo) -> Bool {
             return false
         }
     }
